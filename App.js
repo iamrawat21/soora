@@ -8,12 +8,14 @@ import {
   ScrollView,
   SafeAreaView,
   TouchableOpacity,
+  StatusBar,
 } from 'react-native';
 
 import styles from "./appStyle"
 
 const App = () => (
     <View style={styles.container}>
+    <StatusBar barStyle='dark-content' />
       {/* {Header} */}
       <SafeAreaView>
         <View style={styles.headwrapper}>
