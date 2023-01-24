@@ -24,7 +24,7 @@ const App = () => (
           </TouchableOpacity>
         </View>
       </SafeAreaView>
-    <ScrollView AndroidSwipeRefreshLayoutNativeComponent='automatic'>
+    <ScrollView showsVerticalScrollIndicator={false} AndroidSwipeRefreshLayoutNativeComponent='automatic'>
       {/* {Titles} */}
       <View style={styles.titlesWrapper}>
         <Text style={styles.subtitles}>Coming Soon</Text>
@@ -50,7 +50,7 @@ const App = () => (
 
       {/* {Notify} */}
     <View style={styles.notifywrapper}>
-    <TextInput style={styles.notifyInput} />
+    <TextInput keyboardType="email-address" style={styles.notifyInput} />
       <TouchableOpacity activeOpacity={0.8} style={styles.notifywrapper2}>
         <Text style={styles.notifytext}>Notify Me</Text>
       </TouchableOpacity>
